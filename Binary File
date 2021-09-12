@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+#include<stdlib.h>
+
+#include<conio.h>
+
+#include<string.h>
+
+int main()
+
+{
+
+	struct Ali	{
+
+		char a[10];
+
+		int rollno;
+
+	}ep;
+
+	int a[5],i;
+
+	char b[10];
+
+	
+
+	FILE *fp;
+
+	fp=fopen("/storage/emulated/0/password.txt","wb");
+
+	if(fp==NULL)
+
+	{
+
+	printf("file can not open");
+
+	exit(1);
+
+	};
+
+	printf("enter a name : ");
+
+	gets(b);
+
+	strcpy(ep.a,b);
+
+	printf("enter a roll no : ");
+
+	scanf("%d",&ep.rollno);
+
+	fwrite(&ep,sizeof(struct Ali),1,fp);
+
+	return 0;
+
+}
