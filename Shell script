@@ -24,7 +24,7 @@ echo hello
 
     then
 
-break
+break #continue exit
 
 fi
 
