@@ -1,0 +1,55 @@
+#!/system/bin/sh
+
+echo enter a number
+
+read a
+
+echo enter a number
+
+read b
+
+i=1
+
+while [ i -le 10 ]
+
+do
+
+k=`ls`
+
+echo hello
+
+    echo `expr $a + $b `
+
+    if [ $i -eq 5 ]
+
+    then
+
+break
+
+fi
+
+i=`expr $i+1`
+
+    done
+
+if [ -b readme.txt ]
+
+then
+
+echo yes
+
+fi
+
+case $a in
+
+1) echo "a is one"
+
+;;
+
+2) echo "a is two"
+
+;;
+
+*) echo "there is no match"
+
+esac
